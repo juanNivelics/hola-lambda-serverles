@@ -17,8 +17,8 @@ module.exports.showUser = async (event, context) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: `Petición POST`,
-      input: `Hola ${body.name} ${body.lastname}`,
+      message: `Petición POST lambda`,
+      input: `Hola ${body.name}  ${body.lastname}`,
     }),
   };
 };
